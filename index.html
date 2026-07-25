@@ -136,68 +136,70 @@
                 <div class="relative z-10 space-y-4">
                     
                     <!-- OFFICIAL PARTNER LOGOS BANNER -->
-                    <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-md text-slate-800">
-                        <div class="text-xs sm:text-sm font-bold text-slate-800 text-center mb-3 flex items-center justify-center gap-1.5 flex-wrap">
-                            <i class="fa-solid fa-handshake-angle text-emerald-600"></i>
+                    <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-md text-slate-800 border border-slate-100">
+                        <div class="text-xs sm:text-sm font-bold text-slate-800 text-center mb-3 sm:mb-4 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-handshake-angle text-emerald-600 text-base sm:text-lg"></i>
                             <span>หน่วยงานภาคีเครือข่ายความร่วมมือ</span>
                         </div>
                         
-                        <div class="grid grid-cols-5 gap-1.5 sm:gap-3 items-center justify-items-center">
+                        <div class="grid grid-cols-5 gap-2 sm:gap-4 items-stretch justify-items-center">
                             <!-- 1. AFC / หอการค้ากาฬสินธุ์ -->
-                            <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
-                                <div id="partnerLogoDisplay1" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden">
-                                    <div class="flex flex-col items-start justify-center leading-none text-left pl-1">
-                                        <span class="text-emerald-600 font-black text-base sm:text-2xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-emerald-800">AFC</span>
-                                        <span class="text-[5px] sm:text-[7px] font-bold text-slate-800 mt-0.5 leading-tight">ศูนย์ประสานงานและประชาสัมพันธ์</span>
-                                        <span class="text-[5px] sm:text-[7px] font-bold text-emerald-700 leading-tight">สินค้าเกษตรและอาหาร</span>
-                                    </div>
-                                    <div class="h-10 sm:h-12 w-[1px] bg-slate-200 shrink-0 mx-1"></div>
-                                    <div class="flex flex-col items-center justify-center text-center">
-                                        <i class="fa-solid fa-shield-halved text-sky-600 text-lg sm:text-2xl"></i>
-                                        <span class="text-[5px] sm:text-[7px] font-bold text-slate-800 mt-0.5 leading-tight">หอการค้าฯ</span>
+                            <div class="flex flex-col items-center justify-between w-full group cursor-pointer" onclick="attemptConfigAccess()">
+                                <div id="partnerLogoDisplay1" class="w-full h-16 sm:h-20 rounded-xl bg-slate-50/80 p-2 border border-slate-200/80 flex items-center justify-center hover:bg-white hover:border-emerald-400 hover:shadow-md hover:scale-105 transition-all overflow-hidden">
+                                    <div class="flex items-center justify-center gap-1.5 w-full h-full">
+                                        <div class="flex flex-col items-start justify-center leading-none text-left">
+                                            <span class="text-emerald-600 font-black text-sm sm:text-xl tracking-tighter">AFC</span>
+                                            <span class="text-[5px] sm:text-[7px] font-bold text-slate-800 mt-0.5 leading-tight">ศูนย์ประสานงานฯ</span>
+                                            <span class="text-[5px] sm:text-[7px] font-bold text-emerald-700 leading-tight">สินค้าเกษตรและอาหาร</span>
+                                        </div>
+                                        <div class="h-8 sm:h-10 w-[1px] bg-slate-200 shrink-0"></div>
+                                        <div class="flex flex-col items-center justify-center text-center">
+                                            <i class="fa-solid fa-shield-halved text-sky-600 text-base sm:text-xl"></i>
+                                            <span class="text-[5px] sm:text-[7px] font-bold text-slate-800 mt-0.5 leading-tight">หอการค้าฯ</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 line-clamp-2">1. ศูนย์ AFC / หอการค้าฯ</span>
+                                <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-2 text-center leading-tight h-8 flex items-center justify-center">1. ศูนย์ AFC / หอการค้าฯ</span>
                             </div>
 
                             <!-- 2. จังหวัดกาฬสินธุ์ -->
-                            <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
-                                <div id="partnerLogoDisplay2" class="w-12 h-14 sm:w-16 sm:h-20 rounded-xl bg-white p-1 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden">
+                            <div class="flex flex-col items-center justify-between w-full group cursor-pointer" onclick="attemptConfigAccess()">
+                                <div id="partnerLogoDisplay2" class="w-full h-16 sm:h-20 rounded-xl bg-slate-50/80 p-2 border border-slate-200/80 flex items-center justify-center hover:bg-white hover:border-emerald-400 hover:shadow-md hover:scale-105 transition-all overflow-hidden">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Seal_Kalasin.png/300px-Seal_Kalasin.png" 
-                                         alt="จังหวัดกาฬสินธุ์" class="w-full h-full object-contain"
-                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-building text-amber-600 text-xl\'></i>';">
+                                         alt="จังหวัดกาฬสินธุ์" class="max-h-full max-w-full object-contain mx-auto"
+                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-building text-amber-600 text-2xl\'></i>';">
                                 </div>
-                                <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 line-clamp-2">2. จังหวัดกาฬสินธุ์</span>
+                                <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-2 text-center leading-tight h-8 flex items-center justify-center">2. จังหวัดกาฬสินธุ์</span>
                             </div>
 
                             <!-- 3. พาณิชย์จังหวัดกาฬสินธุ์ -->
-                            <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
-                                <div id="partnerLogoDisplay3" class="w-12 h-14 sm:w-16 sm:h-20 rounded-xl bg-white p-1 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden">
+                            <div class="flex flex-col items-center justify-between w-full group cursor-pointer" onclick="attemptConfigAccess()">
+                                <div id="partnerLogoDisplay3" class="w-full h-16 sm:h-20 rounded-xl bg-slate-50/80 p-2 border border-slate-200/80 flex items-center justify-center hover:bg-white hover:border-emerald-400 hover:shadow-md hover:scale-105 transition-all overflow-hidden">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Seal_of_the_Ministry_of_Commerce_of_Thailand.svg/300px-Seal_of_the_Ministry_of_Commerce_of_Thailand.svg.png" 
-                                         alt="พาณิชย์จังหวัดกาฬสินธุ์" class="w-full h-full object-contain"
-                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-store text-sky-600 text-xl\'></i>';">
+                                         alt="พาณิชย์จังหวัดกาฬสินธุ์" class="max-h-full max-w-full object-contain mx-auto"
+                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-store text-sky-600 text-2xl\'></i>';">
                                 </div>
-                                <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 line-clamp-2">3. พาณิชย์จังหวัดกาฬสินธุ์</span>
+                                <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-2 text-center leading-tight h-8 flex items-center justify-center">3. พาณิชย์จังหวัดกาฬสินธุ์</span>
                             </div>
 
                             <!-- 4. เกษตรจังหวัดกาฬสินธุ์ -->
-                            <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
-                                <div id="partnerLogoDisplay4" class="w-12 h-14 sm:w-16 sm:h-20 rounded-xl bg-white p-1 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden">
+                            <div class="flex flex-col items-center justify-between w-full group cursor-pointer" onclick="attemptConfigAccess()">
+                                <div id="partnerLogoDisplay4" class="w-full h-16 sm:h-20 rounded-xl bg-slate-50/80 p-2 border border-slate-200/80 flex items-center justify-center hover:bg-white hover:border-emerald-400 hover:shadow-md hover:scale-105 transition-all overflow-hidden">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Emblem_of_the_Department_of_Agricultural_Extension_of_Thailand.svg/300px-Emblem_of_the_Department_of_Agricultural_Extension_of_Thailand.svg.png" 
-                                         alt="เกษตรจังหวัดกาฬสินธุ์" class="w-full h-full object-contain"
-                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-wheat-awn text-emerald-600 text-xl\'></i>';">
+                                         alt="เกษตรจังหวัดกาฬสินธุ์" class="max-h-full max-w-full object-contain mx-auto"
+                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-wheat-awn text-emerald-600 text-2xl\'></i>';">
                                 </div>
-                                <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 line-clamp-2">4. เกษตรจังหวัดกาฬสินธุ์</span>
+                                <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-2 text-center leading-tight h-8 flex items-center justify-center">4. เกษตรจังหวัดกาฬสินธุ์</span>
                             </div>
 
                             <!-- 5. ประมงจังหวัดกาฬสินธุ์ -->
-                            <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
-                                <div id="partnerLogoDisplay5" class="w-12 h-14 sm:w-16 sm:h-20 rounded-xl bg-white p-1 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden">
+                            <div class="flex flex-col items-center justify-between w-full group cursor-pointer" onclick="attemptConfigAccess()">
+                                <div id="partnerLogoDisplay5" class="w-full h-16 sm:h-20 rounded-xl bg-slate-50/80 p-2 border border-slate-200/80 flex items-center justify-center hover:bg-white hover:border-emerald-400 hover:shadow-md hover:scale-105 transition-all overflow-hidden">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Emblem_of_the_Department_of_Fisheries_of_Thailand.svg/300px-Emblem_of_the_Department_of_Fisheries_of_Thailand.svg.png" 
-                                         alt="ประมงจังหวัดกาฬสินธุ์" class="w-full h-full object-contain"
-                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-fish text-blue-600 text-xl\'></i>';">
+                                         alt="ประมงจังหวัดกาฬสินธุ์" class="max-h-full max-w-full object-contain mx-auto"
+                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-fish text-blue-600 text-2xl\'></i>';">
                                 </div>
-                                <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 line-clamp-2">5. ประมงจังหวัดกาฬสินธุ์</span>
+                                <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-2 text-center leading-tight h-8 flex items-center justify-center">5. ประมงจังหวัดกาฬสินธุ์</span>
                             </div>
                         </div>
                     </div>
@@ -918,7 +920,7 @@
 
                 if (logoData) {
                     if (displayElem) {
-                        displayElem.innerHTML = `<img src="${logoData}" alt="โลโก้ ${i}" class="w-full h-full object-contain" />`;
+                        displayElem.innerHTML = `<img src="${logoData}" alt="โลโก้ ${i}" class="max-h-full max-w-full object-contain mx-auto" />`;
                     }
                     if (previewElem) {
                         previewElem.innerHTML = `<img src="${logoData}" alt="พรีวิว ${i}" class="w-full h-full object-contain rounded" />`;
