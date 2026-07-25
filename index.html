@@ -86,7 +86,7 @@
             <div class="flex justify-between items-center h-16 sm:h-20">
                 <!-- LOGO & BRAND NAME -->
                 <div class="flex items-center gap-3 cursor-pointer" onclick="switchTab('form')">
-                    <div id="headerLogoContainer" class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-emerald-600 flex items-center justify-center text-white shadow-sm shrink-0 overflow-hidden">
+                    <div id="headerLogoContainer" class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-white flex items-center justify-center text-emerald-700 shadow-sm shrink-0 overflow-hidden border border-emerald-100">
                         <i id="headerLogoIcon" class="fa-solid fa-wheat-awn text-xl sm:text-2xl"></i>
                     </div>
                     <div>
@@ -127,32 +127,29 @@
 
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
 
-        <!-- ========================================== -->
-        <!-- TAB 1: FORM SUBMISSION VIEW -->
-        <!-- ========================================== -->
         <section id="formView" class="max-w-3xl mx-auto space-y-6">
             
             <div class="bg-[#11291e] text-white rounded-2xl p-5 sm:p-7 shadow-md border border-[#234d38] border-t-8 border-t-emerald-500 relative overflow-hidden">
                 <div class="relative z-10 space-y-4">
                     
-                    <!-- OFFICIAL PARTNER LOGOS BANNER -->
-                    <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-md text-slate-800">
+                    <!-- OFFICIAL PARTNER LOGOS BANNER (WHITE BACKGROUND) -->
+                    <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-md text-slate-800 border border-slate-100">
                         <div class="text-xs sm:text-sm font-bold text-slate-800 text-center mb-3 flex items-center justify-center gap-1.5 flex-wrap">
                             <i class="fa-solid fa-handshake-angle text-emerald-600"></i>
                             <span>หน่วยงานภาคีเครือข่ายความร่วมมือ</span>
                         </div>
                         
                         <div class="grid grid-cols-5 gap-1.5 sm:gap-3 items-center justify-items-center">
-                            <!-- AFC / หอการค้ากาฬสินธุ์ -->
+                            <!-- 1. AFC / หอการค้ากาฬสินธุ์ -->
                             <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
                                 <div id="partnerLogoDisplay1" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm">
-                                    <div class="flex flex-col items-start justify-center leading-none text-left pl-1">
+                                    <div class="flex flex-col items-start justify-center leading-none text-left pl-1 bg-white">
                                         <span class="text-emerald-600 font-black text-base sm:text-2xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-emerald-800">AFC</span>
                                         <span class="text-[5px] sm:text-[7px] font-bold text-slate-800 mt-0.5 leading-tight">ศูนย์ประสานงานและประชาสัมพันธ์</span>
                                         <span class="text-[5px] sm:text-[7px] font-bold text-emerald-700 leading-tight">สินค้าเกษตรและอาหาร</span>
                                     </div>
                                     <div class="h-10 sm:h-12 w-[1px] bg-slate-200 shrink-0 mx-1"></div>
-                                    <div class="flex flex-col items-center justify-center text-center">
+                                    <div class="flex flex-col items-center justify-center text-center bg-white">
                                         <i class="fa-solid fa-shield-halved text-sky-600 text-lg sm:text-2xl"></i>
                                         <span class="text-[5px] sm:text-[7px] font-bold text-slate-800 mt-0.5 leading-tight">หอการค้าฯ</span>
                                     </div>
@@ -160,42 +157,42 @@
                                 <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 h-8 flex items-center justify-center text-center leading-tight">ศูนย์ AFC / หอการค้าฯ</span>
                             </div>
 
-                            <!-- จังหวัดกาฬสินธุ์ -->
+                            <!-- 2. จังหวัดกาฬสินธุ์ -->
                             <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
                                 <div id="partnerLogoDisplay2" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1.5 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Seal_Kalasin.png/300px-Seal_Kalasin.png" 
                                          alt="จังหวัดกาฬสินธุ์" class="max-h-full max-w-full object-contain mx-auto bg-white"
-                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-building text-amber-600 text-xl\'></i>';">
+                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-building text-amber-600 text-xl bg-white\'></i>';">
                                 </div>
                                 <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 h-8 flex items-center justify-center text-center leading-tight">จังหวัดกาฬสินธุ์</span>
                             </div>
 
-                            <!-- พาณิชย์จังหวัดกาฬสินธุ์ -->
+                            <!-- 3. พาณิชย์จังหวัดกาฬสินธุ์ -->
                             <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
                                 <div id="partnerLogoDisplay3" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1.5 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Seal_of_the_Ministry_of_Commerce_of_Thailand.svg/300px-Seal_of_the_Ministry_of_Commerce_of_Thailand.svg.png" 
                                          alt="พาณิชย์จังหวัดกาฬสินธุ์" class="max-h-full max-w-full object-contain mx-auto bg-white"
-                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-store text-sky-600 text-xl\'></i>';">
+                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-store text-sky-600 text-xl bg-white\'></i>';">
                                 </div>
                                 <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 h-8 flex items-center justify-center text-center leading-tight">พาณิชย์จังหวัดกาฬสินธุ์</span>
                             </div>
 
-                            <!-- เกษตรจังหวัดกาฬสินธุ์ -->
+                            <!-- 4. เกษตรจังหวัดกาฬสินธุ์ -->
                             <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
                                 <div id="partnerLogoDisplay4" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1.5 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Emblem_of_the_Department_of_Agricultural_Extension_of_Thailand.svg/300px-Emblem_of_the_Department_of_Agricultural_Extension_of_Thailand.svg.png" 
                                          alt="เกษตรจังหวัดกาฬสินธุ์" class="max-h-full max-w-full object-contain mx-auto bg-white"
-                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-wheat-awn text-emerald-600 text-xl\'></i>';">
+                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-wheat-awn text-emerald-600 text-xl bg-white\'></i>';">
                                 </div>
                                 <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 h-8 flex items-center justify-center text-center leading-tight">เกษตรจังหวัดกาฬสินธุ์</span>
                             </div>
 
-                            <!-- ประมงจังหวัดกาฬสินธุ์ -->
+                            <!-- 5. ประมงจังหวัดกาฬสินธุ์ -->
                             <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
                                 <div id="partnerLogoDisplay5" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1.5 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Emblem_of_the_Department_of_Fisheries_of_Thailand.svg/300px-Emblem_of_the_Department_of_Fisheries_of_Thailand.svg.png" 
                                          alt="ประมงจังหวัดกาฬสินธุ์" class="max-h-full max-w-full object-contain mx-auto bg-white"
-                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-fish text-blue-600 text-xl\'></i>';">
+                                         onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-fish text-blue-600 text-xl bg-white\'></i>';">
                                 </div>
                                 <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 h-8 flex items-center justify-center text-center leading-tight">ประมงจังหวัดกาฬสินธุ์</span>
                             </div>
@@ -325,7 +322,6 @@
                     </div>
                 </div>
 
-                <!-- Section 2: Product & Issue Details -->
                 <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-sm border border-slate-300 space-y-5">
                     <h3 class="text-base sm:text-lg font-bold text-slate-900 border-b-2 border-slate-200 pb-2.5 flex items-center gap-2">
                         <i class="fa-solid fa-wheat-awn text-agri-600 text-lg sm:text-xl"></i> ส่วนที่ 2: ข้อมูลปัญหาสินค้าเกษตรและอาหาร
@@ -404,7 +400,6 @@
                     </div>
                 </div>
 
-                <!-- Section 3: Photo Upload and Severity Rating -->
                 <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-sm border border-slate-300 space-y-5">
                     <h3 class="text-base sm:text-lg font-bold text-slate-900 border-b-2 border-slate-200 pb-2.5 flex items-center gap-2">
                         <i class="fa-solid fa-camera-retro text-agri-600 text-lg sm:text-xl"></i> ส่วนที่ 3: ภาพถ่ายสินค้าและประเมินระดับผลกระทบ
@@ -472,9 +467,6 @@
             </form>
         </section>
 
-        <!-- ========================================== -->
-        <!-- TAB 2: REAL-TIME DASHBOARD VIEW -->
-        <!-- ========================================== -->
         <section id="dashboardView" class="space-y-6 hidden">
             <!-- Top Controls & Filters -->
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
@@ -546,7 +538,6 @@
                 </div>
             </div>
 
-            <!-- Charts Grid -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <!-- Doughnut Chart: Category -->
                 <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
@@ -834,7 +825,7 @@
         </div>
     </div>
 
-    <!-- MODAL 4: GENERIC CONFIRMATION DIALOG (Replaces confirm()) -->
+    <!-- MODAL 4: GENERIC CONFIRMATION DIALOG -->
     <div id="confirmActionModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
         <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-2xl border border-slate-200 space-y-4 text-center">
             <div class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center mx-auto text-xl">
@@ -989,13 +980,16 @@
 
                 if (logoData) {
                     if (displayElem) {
-                        displayElem.innerHTML = `<img src="${logoData}" alt="โลโก้ ${i}" class="max-h-full max-w-full object-contain mx-auto" />`;
+                        displayElem.classList.add('bg-white');
+                        displayElem.innerHTML = `<img src="${logoData}" alt="โลโก้ ${i}" class="max-h-full max-w-full object-contain mx-auto bg-white" />`;
                     }
                     if (previewElem) {
-                        previewElem.innerHTML = `<img src="${logoData}" alt="พรีวิว ${i}" class="w-full h-full object-contain rounded" />`;
+                        previewElem.classList.add('bg-white');
+                        previewElem.innerHTML = `<img src="${logoData}" alt="พรีวิว ${i}" class="w-full h-full object-contain rounded bg-white" />`;
                     }
                 } else {
                     if (previewElem) {
+                        previewElem.classList.add('bg-white');
                         previewElem.innerHTML = `<i class="fa-solid fa-image text-slate-400"></i>`;
                     }
                 }
@@ -1148,7 +1142,7 @@
                 try {
                     await signInAnonymously(window.appState.auth);
                 } catch (authErr) {
-                    console.warn("Anonymous Sign-in Notice (Enable Anonymous Auth in Firebase Console):", authErr);
+                    console.warn("Anonymous Sign-in Notice:", authErr);
                 }
 
                 setupRealtimeListener();
@@ -1782,9 +1776,9 @@
                     </div>
 
                     ${item.farmerPhotoData ? `
-                    <div class="mt-2 text-center border-t border-slate-200 pt-2">
+                    <div class="mt-2 text-center border-t border-slate-200 pt-2 bg-white p-2 rounded-xl">
                         <span class="text-xs font-bold text-slate-700 block mb-1">รูปภาพเกษตรกร / ผู้แจ้งเรื่อง:</span>
-                        <img src="${item.farmerPhotoData}" alt="รูปผู้แจ้งเรื่อง" class="max-h-40 mx-auto rounded-xl border border-slate-200 shadow-sm object-cover" />
+                        <img src="${item.farmerPhotoData}" alt="รูปผู้แจ้งเรื่อง" class="max-h-40 mx-auto rounded-xl border border-slate-200 shadow-sm object-cover bg-white" />
                     </div>
                     ` : item.farmerFileName ? `
                     <div class="flex items-center justify-between p-2 bg-emerald-50 rounded-lg text-xs text-emerald-800 border border-emerald-200">
@@ -1821,9 +1815,9 @@
                 </div>
 
                 ${item.productPhotoData ? `
-                    <div class="mt-2 text-center border-t border-slate-200 pt-2">
+                    <div class="mt-2 text-center border-t border-slate-200 pt-2 bg-white p-2 rounded-xl">
                         <span class="text-xs font-bold text-slate-700 block mb-1">ภาพถ่ายสินค้า / ลานซื้อขาย:</span>
-                        <img src="${item.productPhotoData}" alt="รูปสินค้าเกษตร" class="max-h-48 mx-auto rounded-xl border border-slate-200 shadow-sm object-cover" />
+                        <img src="${item.productPhotoData}" alt="รูปสินค้าเกษตร" class="max-h-48 mx-auto rounded-xl border border-slate-200 shadow-sm object-cover bg-white" />
                     </div>
                 ` : item.fileName ? `
                     <div class="flex items-center justify-between p-2.5 bg-emerald-50 rounded-xl border border-emerald-200 text-emerald-900 text-xs">
