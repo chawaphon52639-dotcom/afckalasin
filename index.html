@@ -82,26 +82,26 @@
 <body class="bg-[#183728] text-slate-800 min-h-screen flex flex-col selection:bg-agri-600 selection:text-white">
 
     <header class="sticky top-0 z-40 bg-[#11291e] border-b border-[#214734] text-white shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16 sm:h-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3">
+            <div class="flex justify-between items-center gap-2 sm:gap-4">
                 <!-- LOGO & BRAND NAME -->
-                <div class="flex items-center gap-3 cursor-pointer" onclick="switchTab('form')">
+                <div class="flex items-center gap-2.5 sm:gap-3 cursor-pointer max-w-[62%] sm:max-w-[70%]" onclick="switchTab('form')">
                     <div id="headerLogoContainer" class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-white flex items-center justify-center text-emerald-700 shadow-sm shrink-0 overflow-hidden border border-emerald-100">
                         <i id="headerLogoIcon" class="fa-solid fa-wheat-awn text-xl sm:text-2xl"></i>
                     </div>
-                    <div>
-                        <div class="flex items-center gap-2">
-                            <span class="px-2 py-0.5 rounded-md bg-[#1f4835] text-emerald-200 text-[10px] sm:text-xs font-bold tracking-wide uppercase border border-[#2b5e46]">ศูนย์ AFC</span>
-                            <span class="text-xs text-emerald-300 font-semibold hidden md:inline">หอการค้าจังหวัดกาฬสินธุ์</span>
+                    <div class="min-w-0 flex-1">
+                        <div class="flex items-center gap-1.5 flex-wrap">
+                            <span class="px-2 py-0.5 rounded-md bg-[#1f4835] text-emerald-200 text-[10px] sm:text-xs font-bold tracking-wide uppercase border border-[#2b5e46] shrink-0">ศูนย์ AFC</span>
+                            <span class="text-[11px] sm:text-xs text-emerald-300 font-semibold truncate">หอการค้าจังหวัดกาฬสินธุ์</span>
                         </div>
-                        <h1 id="appTitleText" class="font-bold text-sm sm:text-base md:text-lg leading-tight text-white">
-                            รับแจ้งปัญหาสินค้าเกษตรและอาหาร (กาฬสินธุ์)
+                        <h1 id="appTitleText" class="font-bold text-xs sm:text-sm md:text-base leading-snug text-white line-clamp-2 mt-0.5" title="ฟอร์มรับแจ้งปัญหาสินค้าเกษตรและอาหารในสภาวะตกต่ำหรือล้นตลาด และ เพื่อสนับสนุนส่งเสริมสินค้าเกษตรขึ้นชื่อของจังหวัด">
+                            ฟอร์มรับแจ้งปัญหาสินค้าเกษตรและอาหารในสภาวะตกต่ำหรือล้นตลาด และ เพื่อสนับสนุนส่งเสริมสินค้าเกษตรขึ้นชื่อของจังหวัด
                         </h1>
                     </div>
                 </div>
 
                 <!-- NAVIGATION TABS -->
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 shrink-0">
                     <div class="bg-[#0d2118] border border-[#214734] p-1 rounded-xl flex items-center text-xs sm:text-sm font-medium">
                         <button id="navTabForm" onclick="switchTab('form')" class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-emerald-950 bg-white shadow-sm transition-all flex items-center gap-2 font-bold">
                             <i class="fa-solid fa-pen-to-square"></i>
@@ -205,8 +205,8 @@
                         </span>
                     </div>
 
-                    <h2 id="formHeaderTitle" class="text-lg sm:text-2xl md:text-3xl font-bold text-white leading-snug pt-1">
-                        ฟอร์มรับแจ้งปัญหาสินค้าเกษตรและอาหารในสภาวะตกต่ำหรือล้นตลาด
+                    <h2 id="formHeaderTitle" class="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-white leading-relaxed pt-1">
+                        ฟอร์มรับแจ้งปัญหาสินค้าเกษตรและอาหารในสภาวะตกต่ำหรือล้นตลาด และ เพื่อสนับสนุนส่งเสริมสินค้าเกษตรขึ้นชื่อของจังหวัด
                     </h2>
 
                     <p id="formHeaderDesc" class="text-emerald-100 font-normal leading-relaxed text-xs sm:text-sm">
@@ -253,7 +253,15 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-xs sm:text-sm font-bold text-slate-900 mb-1">
+                                เลขประจำตัวประชาชน <span class="text-slate-500 font-normal">(ถ้ามี)</span>
+                            </label>
+                            <input type="text" id="inputNationalId" maxlength="13" placeholder="เช่น 1409900123456"
+                                class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-agri-500 focus:border-agri-600 transition outline-none text-slate-900 font-medium text-xs sm:text-sm placeholder-slate-400 font-mono">
+                        </div>
+
                         <div>
                             <label class="block text-xs sm:text-sm font-bold text-slate-900 mb-1">
                                 เบอร์โทรศัพท์ติดต่อ <span class="text-red-600">*</span>
@@ -476,7 +484,7 @@
                     </h2>
                     <p class="text-xs text-slate-500 mt-0.5 flex items-center gap-1.5">
                         <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                        เชื่อมต่อข้อมูลสถิติสดแบบ Real-Time Syncing (afckalasin)
+                        เชื่อมต่อข้อมูลสถิติสดแบบ Real-Time Syncing (อัปเดตอัตโนมัติทุก 5 วินาที)
                     </p>
                 </div>
                 
@@ -491,7 +499,6 @@
                 </div>
             </div>
 
-            <!-- KPI Cards -->
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-3 sm:gap-4">
                     <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-agri-50 text-agri-600 flex items-center justify-center text-lg sm:text-xl shrink-0">
@@ -570,7 +577,6 @@
                 </div>
             </div>
 
-            <!-- Table Container -->
             <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
                 <div class="p-5 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div>
@@ -873,7 +879,7 @@
                 trend: null
             },
             config: {
-                title: "ฟอร์มรับแจ้งปัญหาสินค้าเกษตรและอาหารในสภาวะตกต่ำหรือล้นตลาด",
+                title: "ฟอร์มรับแจ้งปัญหาสินค้าเกษตรและอาหารในสภาวะตกต่ำหรือล้นตลาด และ เพื่อสนับสนุนส่งเสริมสินค้าเกษตรขึ้นชื่อของจังหวัด",
                 subtitle: "ศูนย์ประสานงาน AFCหอการค้าจังหวัดกาฬสินธุ์ ร่วมกับ ภาคีเครือข่ายภาครัฐ [จังหวัดกาฬสินธุ์ ,พาณิชย์จังหวัดกาฬสินธุ์ , เกษตรจังหวัดกาฬสินธุ์ ,ประมงจังหวัดกาฬสินธุ์]",
                 desc: "ช่องทางรับเรื่องรวบรวมข้อมูลปัญหาสินค้าเกษตรและอาหารล้นตลาด/ราคาตกต่ำ ในพื้นที่จังหวัดกาฬสินธุ์ เพื่อให้ศูนย์ AFC หอการค้าจังหวัดกาฬสินธุ์ ประสานงานกับหน่วยงานภาครัฐ เอกชน และห้างร้าน เพื่อเร่งช่วยเหลือบรรเทาความเดือดร้อนอย่างมีประสิทธิภาพ",
                 logoUrl: "",
@@ -889,6 +895,18 @@
                 }
             }
         };
+
+        const FULL_NEW_TITLE = "ฟอร์มรับแจ้งปัญหาสินค้าเกษตรและอาหารในสภาวะตกต่ำหรือล้นตลาด และ เพื่อสนับสนุนส่งเสริมสินค้าเกษตรขึ้นชื่อของจังหวัด";
+
+        // Auto-migrates old title saved in Firestore/LocalStorage to the new full title
+        function ensureLatestTitleConfig() {
+            if (!window.appState.config.title || 
+                window.appState.config.title === "ฟอร์มรับแจ้งปัญหาสินค้าเกษตรและอาหารในสภาวะตกต่ำหรือล้นตลาด" ||
+                window.appState.config.title === "รับแจ้งปัญหาสินค้าเกษตรและอาหาร (กาฬสินธุ์)" ||
+                window.appState.config.title === "ฟอร์มรับแจ้งปัญหาสินค้าเกษตร") {
+                window.appState.config.title = FULL_NEW_TITLE;
+            }
+        }
 
         // Compresses high-res camera photos down to safe dimensions (~80-150KB) to ensure Firestore doc limits are never breached
         window.compressImage = function(file, maxWidth = 800, maxHeight = 800, quality = 0.7) {
@@ -1080,6 +1098,7 @@
         };
 
         function applyAppConfigUI() {
+            ensureLatestTitleConfig();
             const config = window.appState.config;
             document.getElementById('appTitleText').innerText = config.title;
             document.getElementById('formHeaderTitle').innerText = config.title;
@@ -1155,11 +1174,15 @@
         }
 
         window.handleInformantTypeChange = function() {
-            const informantType = document.getElementById('inputInformantType').value;
+            const informantTypeElem = document.getElementById('inputInformantType');
+            if (!informantTypeElem) return;
+            const informantType = informantTypeElem.value;
             const labelName = document.getElementById('labelName');
             const labelPosition = document.getElementById('labelPosition');
             const inputPosition = document.getElementById('inputPosition');
             const reqStar = document.getElementById('reqPositionStar');
+
+            if (!labelName || !labelPosition || !inputPosition) return;
 
             if (informantType === 'เกษตรกรรายย่อย') {
                 labelName.innerHTML = `ชื่อ-นามสกุลผู้แจ้ง <span class="text-red-600">*</span>`;
@@ -1218,6 +1241,7 @@
                 if (docSnap.exists()) {
                     const data = docSnap.data();
                     window.appState.config = { ...window.appState.config, ...data };
+                    ensureLatestTitleConfig();
                     applyAppConfigUI();
                 }
             }, (err) => console.log("Config listener notice:", err));
@@ -1299,22 +1323,23 @@
             submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> กำลังส่งข้อมูล...`;
 
             const formData = {
-                informantType: document.getElementById('inputInformantType').value,
-                name: document.getElementById('inputName').value.trim(),
-                position: document.getElementById('inputPosition').value.trim(),
-                contact: document.getElementById('inputContact').value.trim(),
-                lineId: document.getElementById('inputLineId').value.trim(),
-                district: document.getElementById('inputDistrict').value,
-                subDistrict: document.getElementById('inputSubDistrict').value.trim(),
+                informantType: document.getElementById('inputInformantType')?.value || 'เกษตรกรรายย่อย',
+                name: document.getElementById('inputName')?.value?.trim() || '',
+                position: document.getElementById('inputPosition')?.value?.trim() || '',
+                nationalId: document.getElementById('inputNationalId')?.value?.trim() || '',
+                contact: document.getElementById('inputContact')?.value?.trim() || '',
+                lineId: document.getElementById('inputLineId')?.value?.trim() || '',
+                district: document.getElementById('inputDistrict')?.value || '',
+                subDistrict: document.getElementById('inputSubDistrict')?.value?.trim() || '',
                 farmerFileName: window.appState.selectedFarmerFileName || null,
                 farmerPhotoData: window.appState.farmerPhotoData || null,
-                category: document.getElementById('inputCategory').value,
-                priority: document.getElementById('inputPriority').value,
-                quantity: document.getElementById('inputQuantity').value.trim(),
-                priceInfo: document.getElementById('inputPriceInfo').value.trim(),
-                helpType: document.getElementById('inputHelpType').value,
-                details: document.getElementById('inputDetails').value.trim(),
-                rating: parseInt(document.getElementById('inputRating').value) || 5,
+                category: document.getElementById('inputCategory')?.value || '',
+                priority: document.getElementById('inputPriority')?.value || '',
+                quantity: document.getElementById('inputQuantity')?.value?.trim() || '',
+                priceInfo: document.getElementById('inputPriceInfo')?.value?.trim() || '',
+                helpType: document.getElementById('inputHelpType')?.value || '',
+                details: document.getElementById('inputDetails')?.value?.trim() || '',
+                rating: parseInt(document.getElementById('inputRating')?.value) || 5,
                 fileName: window.appState.selectedFileName || null,
                 productPhotoData: window.appState.productPhotoData || null,
                 createdAt: serverTimestamp()
@@ -1596,11 +1621,12 @@
                 return;
             }
 
-            const headers = ["วันเวลาแจ้ง", "ประเภทผู้แจ้ง", "ผู้แจ้ง/กลุ่ม", "ตำแหน่ง/ผู้แทน", "เบอร์ติดต่อ", "LINE ID", "อำเภอ", "ตำบล", "ชนิดสินค้า", "ปริมาณกระทบ", "ราคาปัจจุบัน", "ความเร่งด่วน", "สิ่งที่ต้องการช่วยเหลือ", "รายละเอียด"];
+            const headers = ["วันเวลาแจ้ง", "ประเภทผู้แจ้ง", "ผู้แจ้ง/กลุ่ม", "เลขบัตรประชาชน", "ตำแหน่ง/ผู้แทน", "เบอร์ติดต่อ", "LINE ID", "อำเภอ", "ตำบล", "ชนิดสินค้า", "ปริมาณกระทบ", "ราคาปัจจุบัน", "ความเร่งด่วน", "สิ่งที่ต้องการช่วยเหลือ", "รายละเอียด"];
             const rows = data.map(i => [
                 i.createdAtDate ? i.createdAtDate.toLocaleString('th-TH') : '',
                 `"${(i.informantType || '').replace(/"/g, '""')}"`,
                 `"${(i.name || '').replace(/"/g, '""')}"`,
+                `"${(i.nationalId || '').replace(/"/g, '""')}"`,
                 `"${(i.position || '').replace(/"/g, '""')}"`,
                 `"${(i.contact || '').replace(/"/g, '""')}"`,
                 `"${(i.lineId || '').replace(/"/g, '""')}"`,
@@ -1756,6 +1782,12 @@
                         <span class="text-slate-500">ผู้แจ้ง / ชื่อกลุ่ม:</span>
                         <span class="font-semibold text-slate-800">${escapeHtml(item.name || '-')}</span>
                     </div>
+                    ${item.nationalId ? `
+                    <div class="flex justify-between border-b border-slate-200 pb-2">
+                        <span class="text-slate-500">เลขบัตรประชาชน:</span>
+                        <span class="font-semibold text-slate-800 font-mono">${escapeHtml(item.nationalId)}</span>
+                    </div>
+                    ` : ''}
                     ${item.position ? `
                     <div class="flex justify-between border-b border-slate-200 pb-2">
                         <span class="text-slate-500">ตำแหน่ง / ผู้แทน:</span>
@@ -1862,12 +1894,28 @@
             }
         }
 
-        window.fetchDataManual = function() {
-            showToast("อัปเดตข้อมูลล่าสุดเรียบร้อย", "info");
+        window.fetchDataManual = function(silent = false) {
+            if (!silent) {
+                showToast("อัปเดตข้อมูลล่าสุดเรียบร้อย", "info");
+            }
             renderDashboardMetrics();
             renderCharts();
             renderTable();
         };
+
+        // Background auto-refresh loop (Triggers every 5 seconds)
+        function startAutoRefreshLoop() {
+            setInterval(() => {
+                if (window.appState.responses) {
+                    renderDashboardMetrics();
+                    const dashboardView = document.getElementById('dashboardView');
+                    if (dashboardView && !dashboardView.classList.contains('hidden')) {
+                        renderCharts();
+                        renderTable();
+                    }
+                }
+            }, 5000);
+        }
 
         window.saveAppConfig = async function() {
             const title = document.getElementById('configAppTitle').value.trim() || "ฟอร์มรับแจ้งปัญหาสินค้าเกษตร";
@@ -1953,6 +2001,7 @@
             initFirebase();
             setRating(5);
             handleInformantTypeChange();
+            startAutoRefreshLoop();
         };
     </script>
 </body>
