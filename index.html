@@ -131,7 +131,7 @@
                 <!-- LOGO & BRAND NAME -->
                 <div class="flex items-center gap-2.5 sm:gap-3 cursor-pointer max-w-[62%] sm:max-w-[70%]" onclick="switchTab('form')">
                     <div id="headerLogoContainer" class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-white flex items-center justify-center text-emerald-700 shadow-sm shrink-0 overflow-hidden border border-emerald-100">
-                        <i id="headerLogoIcon" class="fa-solid fa-wheat-awn text-xl sm:text-2xl"></i>
+                        <i id="headerLogoIcon" class="fa-solid fa-wheat-awn text-xl sm:text-2xl text-emerald-700"></i>
                     </div>
                     <div class="min-w-0 flex-1">
                         <div class="flex items-center gap-1.5 flex-wrap">
@@ -177,7 +177,7 @@
             <div class="bg-[#11291e] text-white rounded-2xl p-5 sm:p-7 shadow-md border border-[#234d38] border-t-8 border-t-emerald-500 relative overflow-hidden">
                 <div class="relative z-10 space-y-4">
                     
-                    <!-- OFFICIAL PARTNER LOGOS BANNER (WHITE BACKGROUND) -->
+                    <!-- OFFICIAL PARTNER LOGOS BANNER -->
                     <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-md text-slate-800 border border-slate-100">
                         <div class="text-xs sm:text-sm font-bold text-slate-800 text-center mb-3 flex items-center justify-center gap-1.5 flex-wrap">
                             <i class="fa-solid fa-handshake-angle text-emerald-600"></i>
@@ -187,31 +187,62 @@
                         <div class="grid grid-cols-5 gap-1.5 sm:gap-3 items-center justify-items-center">
                             <!-- 1. AFC / หอการค้ากาฬสินธุ์ -->
                             <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
-                                <div id="partnerLogoDisplay1" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm"></div>
+                                <div id="partnerLogoDisplay1" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm">
+                                    <div class="flex flex-col items-start justify-center leading-none text-left pl-1 bg-white">
+                                        <span class="text-emerald-600 font-black text-base sm:text-2xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-emerald-800">AFC</span>
+                                        <span class="text-[5px] sm:text-[7px] font-bold text-slate-800 mt-0.5 leading-tight">ศูนย์ประสานงานและประชาสัมพันธ์</span>
+                                        <span class="text-[5px] sm:text-[7px] font-bold text-emerald-700 leading-tight">สินค้าเกษตรและอาหาร</span>
+                                    </div>
+                                    <div class="h-10 sm:h-12 w-[1px] bg-slate-200 shrink-0 mx-1"></div>
+                                    <div class="flex flex-col items-center justify-center text-center bg-white">
+                                        <i class="fa-solid fa-shield-halved text-sky-600 text-lg sm:text-2xl"></i>
+                                        <span class="text-[5px] sm:text-[7px] font-bold text-slate-800 mt-0.5 leading-tight">หอการค้าฯ</span>
+                                    </div>
+                                </div>
                                 <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 h-8 flex items-center justify-center text-center leading-tight">ศูนย์ AFC / หอการค้าฯ</span>
                             </div>
 
                             <!-- 2. จังหวัดกาฬสินธุ์ -->
                             <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
-                                <div id="partnerLogoDisplay2" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1.5 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm"></div>
+                                <div id="partnerLogoDisplay2" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm">
+                                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-amber-50 border-2 border-amber-400 p-1 flex flex-col items-center justify-center text-amber-800 shadow-inner">
+                                        <svg class="w-6 h-6 sm:w-7 sm:h-7 text-amber-600 fill-current" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 3.8L18.5 20H5.5L12 5.8zM11 9h2v5h-2V9zm0 6h2v2h-2v-2z"/></svg>
+                                        <span class="text-[6px] sm:text-[8px] font-bold text-amber-900 leading-none mt-0.5">กาฬสินธุ์</span>
+                                    </div>
+                                </div>
                                 <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 h-8 flex items-center justify-center text-center leading-tight">จังหวัดกาฬสินธุ์</span>
                             </div>
 
                             <!-- 3. พาณิชย์จังหวัดกาฬสินธุ์ -->
                             <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
-                                <div id="partnerLogoDisplay3" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1.5 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm"></div>
+                                <div id="partnerLogoDisplay3" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm">
+                                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-sky-50 border-2 border-sky-400 p-1 flex flex-col items-center justify-center text-sky-800 shadow-inner">
+                                        <i class="fa-solid fa-store text-sky-600 text-base sm:text-xl"></i>
+                                        <span class="text-[6px] sm:text-[8px] font-bold text-sky-900 leading-none mt-1">พาณิชย์</span>
+                                    </div>
+                                </div>
                                 <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 h-8 flex items-center justify-center text-center leading-tight">พาณิชย์จังหวัดกาฬสินธุ์</span>
                             </div>
 
                             <!-- 4. เกษตรจังหวัดกาฬสินธุ์ -->
                             <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
-                                <div id="partnerLogoDisplay4" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1.5 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm"></div>
+                                <div id="partnerLogoDisplay4" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm">
+                                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-emerald-50 border-2 border-emerald-400 p-1 flex flex-col items-center justify-center text-emerald-800 shadow-inner">
+                                        <i class="fa-solid fa-wheat-awn text-emerald-600 text-base sm:text-xl"></i>
+                                        <span class="text-[6px] sm:text-[8px] font-bold text-emerald-900 leading-none mt-1">เกษตรจังหวัด</span>
+                                    </div>
+                                </div>
                                 <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 h-8 flex items-center justify-center text-center leading-tight">เกษตรจังหวัดกาฬสินธุ์</span>
                             </div>
 
                             <!-- 5. ประมงจังหวัดกาฬสินธุ์ -->
                             <div class="flex flex-col items-center text-center group w-full cursor-pointer" onclick="attemptConfigAccess()">
-                                <div id="partnerLogoDisplay5" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1.5 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm"></div>
+                                <div id="partnerLogoDisplay5" class="w-full h-16 sm:h-20 rounded-xl bg-white p-1 flex items-center justify-center hover:scale-105 transition-transform overflow-hidden border border-slate-100 shadow-sm">
+                                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-blue-50 border-2 border-blue-400 p-1 flex flex-col items-center justify-center text-blue-800 shadow-inner">
+                                        <i class="fa-solid fa-fish text-blue-600 text-base sm:text-xl"></i>
+                                        <span class="text-[6px] sm:text-[8px] font-bold text-blue-900 leading-none mt-1">ประมงจังหวัด</span>
+                                    </div>
+                                </div>
                                 <span class="text-[9px] sm:text-xs font-bold text-slate-800 mt-1.5 h-8 flex items-center justify-center text-center leading-tight">ประมงจังหวัดกาฬสินธุ์</span>
                             </div>
                         </div>
@@ -841,6 +872,22 @@
                             <input type="text" id="editMapLink" class="w-full px-3 py-2 rounded-lg border border-slate-300">
                         </div>
                     </div>
+
+                    <!-- Farmer Photo Edit & Preview -->
+                    <div>
+                        <label class="block font-semibold mb-1">รูปภาพเกษตรกร / ผู้แจ้งเรื่อง</label>
+                        <div class="flex items-center gap-3 p-2.5 bg-white rounded-xl border border-slate-200">
+                            <div id="editFarmerPhotoPreview" class="w-16 h-16 rounded-lg border border-slate-200 bg-slate-100 flex items-center justify-center overflow-hidden shrink-0">
+                                <i class="fa-solid fa-user text-slate-400 text-xl"></i>
+                            </div>
+                            <div class="flex-1 space-y-1">
+                                <input type="file" id="editInputFarmerFile" accept="image/*" onchange="handleEditFarmerFileSelect(event)" class="w-full text-xs text-slate-600 file:mr-2 file:py-1 file:px-2.5 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-emerald-100 file:text-emerald-800 hover:file:bg-emerald-200 cursor-pointer">
+                                <button type="button" onclick="removeEditFarmerPhoto()" id="btnRemoveEditFarmerPhoto" class="text-[10px] text-rose-600 hover:underline font-bold hidden flex items-center gap-1">
+                                    <i class="fa-solid fa-trash-can"></i> ลบรูปผู้แจ้ง
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 2 Edit -->
@@ -905,7 +952,8 @@
 
                 <!-- Section 3 Edit -->
                 <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
-                    <span class="font-bold text-emerald-800 block text-xs border-b border-slate-200 pb-1">ส่วนที่ 3: ระดับผลกระทบและวัตถุประสงค์</span>
+                    <span class="font-bold text-emerald-800 block text-xs border-b border-slate-200 pb-1">ส่วนที่ 3: ระดับผลกระทบ ภาพถ่ายสินค้า และวัตถุประสงค์</span>
+                    
                     <div>
                         <label class="block font-semibold mb-1">ระดับความรุนแรง / วัตถุประสงค์</label>
                         <select id="editRating" class="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white font-bold text-slate-800">
@@ -916,6 +964,22 @@
                             <option value="2">⭐ 2 ดาว (ปานกลาง)</option>
                             <option value="1">⭐ 1 ดาว (เล็กน้อย)</option>
                         </select>
+                    </div>
+
+                    <!-- Product Photo Edit & Preview -->
+                    <div>
+                        <label class="block font-semibold mb-1">รูปภาพสินค้า / แปลงเกษตร / ลานซื้อขาย</label>
+                        <div class="flex items-center gap-3 p-2.5 bg-white rounded-xl border border-slate-200">
+                            <div id="editProductPhotoPreview" class="w-16 h-16 rounded-lg border border-slate-200 bg-slate-100 flex items-center justify-center overflow-hidden shrink-0">
+                                <i class="fa-solid fa-image text-slate-400 text-xl"></i>
+                            </div>
+                            <div class="flex-1 space-y-1">
+                                <input type="file" id="editInputProductFile" accept="image/*" onchange="handleEditProductFileSelect(event)" class="w-full text-xs text-slate-600 file:mr-2 file:py-1 file:px-2.5 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-emerald-100 file:text-emerald-800 hover:file:bg-emerald-200 cursor-pointer">
+                                <button type="button" onclick="removeEditProductPhoto()" id="btnRemoveEditProductPhoto" class="text-[10px] text-rose-600 hover:underline font-bold hidden flex items-center gap-1">
+                                    <i class="fa-solid fa-trash-can"></i> ลบรูปสินค้า
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -1153,7 +1217,7 @@
     <script>
         var FULL_NEW_TITLE = "ฟอร์มรับแจ้งปัญหาสินค้าเกษตรและอาหารในสภาวะตกต่ำหรือล้นตลาด และ เพื่อสนับสนุนส่งเสริมสินค้าเกษตรขึ้นชื่อของจังหวัด";
 
-        // Default agency HTML templates for partner logos
+        // Permanent self-contained vector emblem badges
         window.defaultPartnerLogosHtml = {
             1: `<div class="flex flex-col items-start justify-center leading-none text-left pl-1 bg-white">
                     <span class="text-emerald-600 font-black text-base sm:text-2xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-emerald-800">AFC</span>
@@ -1165,10 +1229,46 @@
                     <i class="fa-solid fa-shield-halved text-sky-600 text-lg sm:text-2xl"></i>
                     <span class="text-[5px] sm:text-[7px] font-bold text-slate-800 mt-0.5 leading-tight">หอการค้าฯ</span>
                 </div>`,
-            2: `<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Seal_Kalasin.png/300px-Seal_Kalasin.png" alt="จังหวัดกาฬสินธุ์" class="max-h-full max-w-full object-contain mx-auto bg-white" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\\'fa-solid fa-building text-amber-600 text-xl bg-white\\'></i>';">`,
-            3: `<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Seal_of_the_Ministry_of_Commerce_of_Thailand.svg/300px-Seal_of_the_Ministry_of_Commerce_of_Thailand.svg.png" alt="พาณิชย์จังหวัดกาฬสินธุ์" class="max-h-full max-w-full object-contain mx-auto bg-white" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\\'fa-solid fa-store text-sky-600 text-xl bg-white\\'></i>';">`,
-            4: `<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Emblem_of_the_Department_of_Agricultural_Extension_of_Thailand.svg/300px-Emblem_of_the_Department_of_Agricultural_Extension_of_Thailand.svg.png" alt="เกษตรจังหวัดกาฬสินธุ์" class="max-h-full max-w-full object-contain mx-auto bg-white" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\\'fa-solid fa-wheat-awn text-emerald-600 text-xl bg-white\\'></i>';">`,
-            5: `<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Emblem_of_the_Department_of_Fisheries_of_Thailand.svg/300px-Emblem_of_the_Department_of_Fisheries_of_Thailand.svg.png" alt="ประมงจังหวัดกาฬสินธุ์" class="max-h-full max-w-full object-contain mx-auto bg-white" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\\'fa-solid fa-fish text-blue-600 text-xl bg-white\\'></i>';">`
+            2: `<div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-amber-50 border-2 border-amber-400 p-1 flex flex-col items-center justify-center text-amber-800 shadow-inner">
+                    <svg class="w-6 h-6 sm:w-7 sm:h-7 text-amber-600 fill-current" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 3.8L18.5 20H5.5L12 5.8zM11 9h2v5h-2V9zm0 6h2v2h-2v-2z"/></svg>
+                    <span class="text-[6px] sm:text-[8px] font-bold text-amber-900 leading-none mt-0.5">กาฬสินธุ์</span>
+                </div>`,
+            3: `<div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-sky-50 border-2 border-sky-400 p-1 flex flex-col items-center justify-center text-sky-800 shadow-inner">
+                    <i class="fa-solid fa-store text-sky-600 text-base sm:text-xl"></i>
+                    <span class="text-[6px] sm:text-[8px] font-bold text-sky-900 leading-none mt-1">พาณิชย์</span>
+                </div>`,
+            4: `<div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-emerald-50 border-2 border-emerald-400 p-1 flex flex-col items-center justify-center text-emerald-800 shadow-inner">
+                    <i class="fa-solid fa-wheat-awn text-emerald-600 text-base sm:text-xl"></i>
+                    <span class="text-[6px] sm:text-[8px] font-bold text-emerald-900 leading-none mt-1">เกษตรจังหวัด</span>
+                </div>`,
+            5: `<div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-blue-50 border-2 border-blue-400 p-1 flex flex-col items-center justify-center text-blue-800 shadow-inner">
+                    <i class="fa-solid fa-fish text-blue-600 text-base sm:text-xl"></i>
+                    <span class="text-[6px] sm:text-[8px] font-bold text-blue-900 leading-none mt-1">ประมงจังหวัด</span>
+                </div>`
+        };
+
+        // Sample SVG Images for Mock Data (Instant rendering for testing comparison)
+        var SAMPLE_FARMER_SVG = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'><rect width='200' height='200' fill='%23059669'/><circle cx='100' cy='80' r='40' fill='%23ffffff'/><path d='M30 180 C30 130 170 130 170 180 Z' fill='%23ffffff'/></svg>";
+        var SAMPLE_PRODUCT_SVG = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'><rect width='200' height='200' fill='%230284c7'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' font-weight='bold' fill='%23ffffff'>ปลากระชังเขื่อนลำปาว</text></svg>";
+        var SAMPLE_RICE_SVG = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'><rect width='200' height='200' fill='%23f59e0b'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' font-weight='bold' fill='%23ffffff'>ข้าวหอมมะลิเจ้าท่า</text></svg>";
+
+        // Safe error handlers for images to prevent TypeError
+        window.handleLogoError = function(imgEl, index) {
+            if (imgEl) {
+                imgEl.onerror = null;
+                if (imgEl.parentElement) {
+                    imgEl.parentElement.innerHTML = window.defaultPartnerLogosHtml[index] || '';
+                }
+            }
+        };
+
+        window.handleHeaderLogoError = function(imgEl) {
+            if (imgEl) {
+                imgEl.onerror = null;
+                if (imgEl.parentElement) {
+                    imgEl.parentElement.innerHTML = '<i id="headerLogoIcon" class="fa-solid fa-wheat-awn text-xl sm:text-2xl text-emerald-700"></i>';
+                }
+            }
         };
 
         window.appState = {
@@ -1194,6 +1294,12 @@
             }
         };
 
+        // Temporary Photo State for Edit Modal
+        window.editFarmerPhotoData = null;
+        window.editFarmerFileName = null;
+        window.editProductPhotoData = null;
+        window.editProductFileName = null;
+
         window.applyPartnerLogosUI = function() {
             var partnerLogos = (window.appState.config && window.appState.config.partnerLogos) ? window.appState.config.partnerLogos : {};
 
@@ -1203,8 +1309,8 @@
                 var previewElem = document.getElementById('partnerLogoPreview' + i);
 
                 if (customLogoData) {
-                    if (displayElem) displayElem.innerHTML = '<img src="' + customLogoData + '" alt="โลโก้ ' + i + '" class="max-h-full max-w-full object-contain mx-auto bg-white" />';
-                    if (previewElem) previewElem.innerHTML = '<img src="' + customLogoData + '" alt="พรีวิว ' + i + '" class="w-full h-full object-contain rounded bg-white" />';
+                    if (displayElem) displayElem.innerHTML = '<img src="' + customLogoData + '" alt="โลโก้ ' + i + '" class="max-h-full max-w-full object-contain mx-auto bg-white" onerror="window.handleLogoError(this, ' + i + ')" />';
+                    if (previewElem) previewElem.innerHTML = '<img src="' + customLogoData + '" alt="พรีวิว ' + i + '" class="w-full h-full object-contain rounded bg-white" onerror="this.onerror=null; this.style.display=\'none\';" />';
                 } else {
                     if (displayElem) displayElem.innerHTML = window.defaultPartnerLogosHtml[i] || '';
                     if (previewElem) previewElem.innerHTML = '<i class="fa-solid fa-image text-slate-400"></i>';
@@ -1214,7 +1320,7 @@
             var headerLogoContainer = document.getElementById('headerLogoContainer');
             if (headerLogoContainer) {
                 if (partnerLogos.logo1) {
-                    headerLogoContainer.innerHTML = '<img src="' + partnerLogos.logo1 + '" class="w-full h-full object-contain rounded-xl bg-white" />';
+                    headerLogoContainer.innerHTML = '<img src="' + partnerLogos.logo1 + '" class="w-full h-full object-contain rounded-xl bg-white" onerror="window.handleHeaderLogoError(this)" />';
                 } else {
                     headerLogoContainer.innerHTML = '<i id="headerLogoIcon" class="fa-solid fa-wheat-awn text-xl sm:text-2xl text-emerald-700"></i>';
                 }
@@ -1473,6 +1579,82 @@
                     window.showToast("ไม่สามารถประมวลผลรูปสินค้าได้", "error");
                 });
             }
+        };
+
+        window.updateEditPhotoPreviewsUI = function() {
+            var farmerPrev = document.getElementById('editFarmerPhotoPreview');
+            var farmerRemoveBtn = document.getElementById('btnRemoveEditFarmerPhoto');
+            if (farmerPrev) {
+                if (window.editFarmerPhotoData) {
+                    farmerPrev.innerHTML = '<img src="' + window.editFarmerPhotoData + '" class="w-full h-full object-cover" />';
+                    if (farmerRemoveBtn) farmerRemoveBtn.classList.remove('hidden');
+                } else {
+                    farmerPrev.innerHTML = '<i class="fa-solid fa-user text-slate-400 text-xl"></i>';
+                    if (farmerRemoveBtn) farmerRemoveBtn.classList.add('hidden');
+                }
+            }
+
+            var prodPrev = document.getElementById('editProductPhotoPreview');
+            var prodRemoveBtn = document.getElementById('btnRemoveEditProductPhoto');
+            if (prodPrev) {
+                if (window.editProductPhotoData) {
+                    prodPrev.innerHTML = '<img src="' + window.editProductPhotoData + '" class="w-full h-full object-cover" />';
+                    if (prodRemoveBtn) prodRemoveBtn.classList.remove('hidden');
+                } else {
+                    prodPrev.innerHTML = '<i class="fa-solid fa-image text-slate-400 text-xl"></i>';
+                    if (prodRemoveBtn) prodRemoveBtn.classList.add('hidden');
+                }
+            }
+        };
+
+        window.handleEditFarmerFileSelect = function(e) {
+            var file = e.target.files[0];
+            if (file) {
+                window.editFarmerFileName = file.name;
+                window.showToast("กำลังย่อรูปภาพผู้แจ้ง...", "info");
+                window.compressImage(file, 800, 800, 0.7).then(function(compressed) {
+                    window.editFarmerPhotoData = compressed;
+                    window.updateEditPhotoPreviewsUI();
+                    window.showToast("อัปเดตรูปผู้แจ้งเรียบร้อย", "success");
+                }).catch(function(err) {
+                    console.error("Edit farmer photo error:", err);
+                    window.showToast("ไม่สามารถประมวลผลรูปภาพได้", "error");
+                });
+            }
+        };
+
+        window.handleEditProductFileSelect = function(e) {
+            var file = e.target.files[0];
+            if (file) {
+                window.editProductFileName = file.name;
+                window.showToast("กำลังย่อรูปภาพสินค้า...", "info");
+                window.compressImage(file, 800, 800, 0.7).then(function(compressed) {
+                    window.editProductPhotoData = compressed;
+                    window.updateEditPhotoPreviewsUI();
+                    window.showToast("อัปเดตรูปสินค้าเรียบร้อย", "success");
+                }).catch(function(err) {
+                    console.error("Edit product photo error:", err);
+                    window.showToast("ไม่สามารถประมวลผลรูปภาพได้", "error");
+                });
+            }
+        };
+
+        window.removeEditFarmerPhoto = function() {
+            window.editFarmerPhotoData = null;
+            window.editFarmerFileName = null;
+            var fileInput = document.getElementById('editInputFarmerFile');
+            if (fileInput) fileInput.value = '';
+            window.updateEditPhotoPreviewsUI();
+            window.showToast("ลบรูปผู้แจ้งออกจากคำร้องแล้ว", "info");
+        };
+
+        window.removeEditProductPhoto = function() {
+            window.editProductPhotoData = null;
+            window.editProductFileName = null;
+            var fileInput = document.getElementById('editInputProductFile');
+            if (fileInput) fileInput.value = '';
+            window.updateEditPhotoPreviewsUI();
+            window.showToast("ลบรูปสินค้าออกจากคำร้องแล้ว", "info");
         };
 
         function getA4ReportHtml(item) {
@@ -1779,6 +1961,18 @@
             window.setElemValue('editDetails', item.details || '');
             window.setElemValue('editRating', String(item.rating || 0));
 
+            // Populate existing photo data to edit state
+            window.editFarmerPhotoData = item.farmerPhotoData || null;
+            window.editFarmerFileName = item.farmerFileName || null;
+            window.editProductPhotoData = item.productPhotoData || null;
+            window.editProductFileName = item.fileName || null;
+
+            var fInput = document.getElementById('editInputFarmerFile');
+            if (fInput) fInput.value = '';
+            var pInput = document.getElementById('editInputProductFile');
+            if (pInput) pInput.value = '';
+
+            window.updateEditPhotoPreviewsUI();
             window.openModal('editModal');
         };
 
@@ -1815,11 +2009,15 @@
                 priority: window.getElemValue('editPriority') || 'ปกติ',
                 helpType: window.getElemValue('editHelpType'),
                 details: window.getElemValue('editDetails'),
-                rating: parseInt(window.getElemValue('editRating')) || 0
+                rating: parseInt(window.getElemValue('editRating')) || 0,
+                farmerPhotoData: window.editFarmerPhotoData || null,
+                farmerFileName: window.editFarmerFileName || null,
+                productPhotoData: window.editProductPhotoData || null,
+                fileName: window.editProductFileName || null
             };
 
             var completeEdit = function() {
-                window.showToast("แก้ไขข้อมูลเรียบร้อยแล้ว", "success");
+                window.showToast("แก้ไขข้อมูลและรูปภาพเรียบร้อยแล้ว", "success");
                 window.closeModal('editModal');
                 if (saveBtn) {
                     saveBtn.disabled = false;
@@ -1914,6 +2112,20 @@
                         ${item.rating && item.rating > 0 ? `<i class="fa-solid fa-star text-amber-500"></i> ${item.rating} / 5` : `<span class="text-emerald-700">🌱 ขอสนับสนุนส่งเสริมสินค้าขึ้นชื่อ</span>`}
                     </span>
                 </div>
+
+                ${item.farmerPhotoData ? `
+                    <div class="mt-2 text-center border-t border-slate-200 pt-2 bg-white p-2 rounded-xl">
+                        <span class="text-xs font-bold text-slate-700 block mb-1">รูปภาพเกษตรกร / ผู้แจ้งเรื่อง:</span>
+                        <img src="${item.farmerPhotoData}" alt="รูปผู้แจ้งเรื่อง" class="max-h-40 mx-auto rounded-xl border border-slate-200 shadow-sm object-cover bg-white" />
+                    </div>
+                ` : ''}
+
+                ${item.productPhotoData ? `
+                    <div class="mt-2 text-center border-t border-slate-200 pt-2 bg-white p-2 rounded-xl">
+                        <span class="text-xs font-bold text-slate-700 block mb-1">ภาพถ่ายสินค้า / ลานซื้อขาย / แปลงเกษตร:</span>
+                        <img src="${item.productPhotoData}" alt="รูปสินค้าเกษตร" class="max-h-48 mx-auto rounded-xl border border-slate-200 shadow-sm object-cover bg-white" />
+                    </div>
+                ` : ''}
             `;
 
             window.openModal('detailModal');
@@ -2118,7 +2330,7 @@
                                 <button onclick="viewItemDetail('${item.id}')" class="p-1.5 rounded-lg text-agri-600 hover:bg-agri-50 transition" title="ดูรายละเอียด">
                                     <i class="fa-solid fa-eye"></i>
                                 </button>
-                                <button onclick="openEditModal('${item.id}')" class="p-1.5 rounded-lg text-amber-600 hover:bg-amber-50 transition" title="แก้ไขข้อมูล">
+                                <button onclick="openEditModal('${item.id}')" class="p-1.5 rounded-lg text-amber-600 hover:bg-amber-50 transition" title="แก้ไขข้อมูล/รูปภาพ">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                 </button>
                                 <button onclick="downloadPdfA4('${item.id}')" class="p-1.5 rounded-lg text-emerald-600 hover:bg-emerald-50 transition" title="ดาวน์โหลดรายงาน PDF A4">
@@ -2518,7 +2730,40 @@
                     priority: 'ด่วนที่สุด',
                     details: 'ปลากระชังทับทิมโตเต็มวัยพร้อมจับขาย แต่พ่อค้าคนกลางชะลอการเข้าจับ',
                     rating: 5,
+                    farmerPhotoData: SAMPLE_FARMER_SVG,
+                    farmerFileName: 'farmer_somsak.png',
+                    productPhotoData: SAMPLE_PRODUCT_SVG,
+                    fileName: 'fish_farm_lampao.png',
                     createdAtDate: new Date()
+                },
+                {
+                    id: 'ks-2',
+                    reqCode: '2607/2026/3344',
+                    informantType: 'กลุ่มเกษตรกร / สหกรณ์',
+                    position: 'ประธานวิสาหกิจ',
+                    name: 'วิสาหกิจชุมชนแปรรูปข้าวหอมมะลิเจ้าท่า',
+                    orgName: 'สหกรณ์การเกษตรกมลาไสย',
+                    nationalId: '1409900223344',
+                    contact: '089-222-1133',
+                    lineId: 'somsak.rice',
+                    district: 'กมลาไสย',
+                    subDistrict: 'ต.เจ้าท่า',
+                    village: 'ม.1 บ้านเจ้าท่า',
+                    mapLink: 'https://maps.google.com/?q=16.3355,103.6211',
+                    categoryMain: 'เกษตร',
+                    categoryDetail: 'ข้าวหอมมะลิเจ้าท่า',
+                    category: 'เกษตร (ข้าวหอมมะลิเจ้าท่า)',
+                    quantity: '120 ตัน',
+                    priceInfo: 'ข้าวเปลือกสด 9,200 บาท/ตัน (ปกติ 12,000)',
+                    helpType: 'เสนอภาครัฐช่วยเหลือชดเชยราคา/มาตรการชะลอขาย',
+                    priority: 'ด่วน',
+                    details: 'ช่วงเก็บเกี่ยวพร้อมกันในลุ่มน้ำปาว โรงสีปรับลดราคารับซื้อลงอย่างรวดเร็ว',
+                    rating: 4,
+                    farmerPhotoData: null,
+                    farmerFileName: null,
+                    productPhotoData: SAMPLE_RICE_SVG,
+                    fileName: 'paddy_rice.png',
+                    createdAtDate: new Date(Date.now() - 3600000 * 8)
                 }
             ];
 
